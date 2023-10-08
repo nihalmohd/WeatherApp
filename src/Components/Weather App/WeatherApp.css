@@ -1,10 +1,10 @@
 .container{
     width: 450px;
-    height: 729px;
+    height: 545px;
     margin:auto;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     border-radius: 12px;
-    background-image: linear-gradient(180deg, #130654 0%, #3b2f80 100%);
+    background-image: linear-gradient(180deg, #130654 0%, #3b2f80 100%);    
 }
 .top-bar{
     display: flex;
@@ -16,12 +16,12 @@
 .top-bar input{
     display: flex;
     width: 290px;
-    height: 58px;
+    height: 50px;
     background: white;
     border: black;
     outline: none;
     border-radius: 40px;
-    padding-left: 40px;
+    padding-left: 30px;
     color: #626262;
     font-size: 20px;
     font-weight: 400;
@@ -31,8 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     background: #ebfffc;
     border-radius: 10px;
     cursor: pointer;
@@ -40,6 +40,8 @@
 }
 
 .search-icon:hover{
+    width: 50px;
+    height: 50px;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: white;
@@ -53,24 +55,25 @@
 }
 
 .weather-image{
+    /* background-color: #c27f7f; */
     color: white;
     width: 450px;
-    height: 200px;
-    margin-top: 29px;
+    height: 160px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 75px;
 }
 .CloudSun{
     display: flex;
     justify-content: center;
     align-items: center;
-   font-size: 150px;
 }
 .weather-temp{
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 400;  
 }
 
@@ -78,7 +81,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
 }
 
@@ -97,12 +100,12 @@
 }
 
 .data{
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 400;
 }
 
 .text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400    ;
 }
 .icon{
