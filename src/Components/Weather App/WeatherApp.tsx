@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./WeatherApp.css"
 import {BiSearch} from "react-icons/bi"
 import {BsFillCloudSunFill} from "react-icons/bs"
@@ -7,9 +7,10 @@ import {FiWind} from "react-icons/fi"
 import {WeatherData} from "../../interface/weatherdata"
 
 const WeatherApp = () => {
+  let display 
   let [weatherdata,setWeatherdata] = useState<WeatherData>()
   let [searchvalue,setSearchvalue] = useState<String>("")
-  let APIKEY = "89f3ed96ecc09bca008d2dd363649a3f"
+  let APIKEY = import.meta.env.VITE_APIKEY
 
    const Search =async ()=>{
         if(searchvalue.trim()===""){
@@ -20,6 +21,11 @@ const WeatherApp = () => {
        let Data = await response.json()
        setWeatherdata(Data)
   }
+   useEffect(()=>{
+    if(weatherdata.)
+   })
+   
+
   return (
     <div className='container'>
       <div className="top-bar">
