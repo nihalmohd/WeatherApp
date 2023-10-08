@@ -6,12 +6,21 @@ import {WiHumidity} from "react-icons/wi"
 import {FiWind} from "react-icons/fi"
 
 const WeatherApp = () => {
+  let APIKEY = "89f3ed96ecc09bca008d2dd363649a3f"
+
+
+   const Search = ()=>{
+       const element = document.getElementsByClassName("cityInput")
+       if(element.length>0){
+        return 0
+       }
+  }
   return (
     <div className='container'>
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder='Search' />
-        <div className="search-icon">
-          <h1><BiSearch/></h1>
+        <div className="search-icon" onClick={()=>{Search()}}>
+          <h1 className='SearchIcon'><BiSearch/></h1>
         </div>
       </div>
         <div className="weather-image">
